@@ -20,9 +20,9 @@ public class matrix {
             double distanceToTwelve = total_weight - 12;
             System.out.println("\nYour total weight does not add to 12.");
             if (distanceToTwelve < 0){
-                System.out.println("You need to add a total of " + Math.abs(distanceToTwelve) + " more to reach 12.");
+                System.out.println("You need to add " + Math.abs(distanceToTwelve) + " more to reach 12.");
             } else {
-                System.out.println("You need to add a total of " + distanceToTwelve + " more to reach 12.");
+                System.out.println("You need to subtract by " + distanceToTwelve + " to reach 12.");
             }
             System.out.println();
 
