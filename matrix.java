@@ -90,10 +90,18 @@ public class matrix {
                     + ((HashMap.Entry<String, Integer>) e).getValue());
         }
         
-        // TODO: PRINT FEEDBACK
+        // TODO: PRINT FEEDBACK and try to convince them to do this again
     }
     public static void main(String[] args) {
+
         matrix.userInteraction();
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Press q to quit. Press any other key to try again.");
+        String ans = scanner.nextLine();
+            while (!ans.equals("q")){
+                matrix.userInteraction();
+            }
+        scanner.close();
     }
 
 }
