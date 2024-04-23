@@ -3,6 +3,10 @@ import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Scanner;
 
+/**
+ * 
+ * @author 
+ */
 public class matrix {
 
     // instance variables
@@ -18,6 +22,9 @@ public class matrix {
     static HashMap<String, Integer> dict = new HashMap<String, Integer>();  
     static double[] weighting = new double[12];               
 
+    /**
+     * 
+     */
     @SuppressWarnings("rawtypes")
     public static void userInteraction(){
         Scanner scanner = new Scanner(System.in);
@@ -91,17 +98,18 @@ public class matrix {
         }
         
         // TODO: PRINT FEEDBACK and try to convince them to do this again
+        System.out.println("FEEDBACK");
     }
     public static void main(String[] args) {
 
         matrix.userInteraction();
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Press q to quit. Press any other key to try again.");
-        String ans = scanner.nextLine();
-            while (!ans.equals("q")){
-                matrix.userInteraction();
-            }
-        scanner.close();
+        // Scanner scanner = new Scanner(System.in);
+        // System.out.println("Press q to quit. Press any other key to try again.");
+        // String ans = scanner.nextLine();
+        // while (!ans.equals("q")){
+        //     matrix.userInteraction();
+        // }
+        // scanner.close();
     }
 
 }
