@@ -100,10 +100,7 @@ public class matrix {
                     + ((HashMap.Entry<String, Integer>) e).getValue());
         }
         
-        // TODO: PRINT FEEDBACK and try to convince them to do this again
-        // HashMap<String,String> map = new HashMap<>();
-        // HashMap.Entry<String,String> entry = map.entrySet().iterator().next();
-        // String key = entry.getKey();
+        // PRINT FEEDBACK 
         String key = "";
         for (Object e : a){
             key = ((HashMap.Entry<String, Integer>) e).getKey();
